@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEB8C62D-FCB9-4151-B4E6-46D631F7539D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MidtermProject</RootNamespace>
+    <AssemblyName>MidtermProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsumerFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsumerFactory.Designer.cs">
+      <DependentUpon>ConsumerFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentUser.cs" />
+    <Compile Include="CurrentWarehouse.cs" />
+    <Compile Include="FactoriesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactoriesList.Designer.cs">
+      <DependentUpon>FactoriesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProducerFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProducerFactory.Designer.cs">
+      <DependentUpon>ProducerFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipsAndTricks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipsAndTricks.Designer.cs">
+      <DependentUpon>TipsAndTricks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHelp.Designer.cs">
+      <DependentUpon>ViewHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseManagement.Designer.cs">
+      <DependentUpon>WarehouseManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouses.Designer.cs">
+      <DependentUpon>Warehouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousesLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehousesLoginPage.Designer.cs">
+      <DependentUpon>WarehousesLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousesSignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehousesSignUpPage.Designer.cs">
+      <DependentUpon>WarehousesSignUpPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConsumerFactory.resx">
+      <DependentUpon>ConsumerFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactoriesList.resx">
+      <DependentUpon>FactoriesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProducerFactory.resx">
+      <DependentUpon>ProducerFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipsAndTricks.resx">
+      <DependentUpon>TipsAndTricks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHelp.resx">
+      <DependentUpon>ViewHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseManagement.resx">
+      <DependentUpon>WarehouseManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouses.resx">
+      <DependentUpon>Warehouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehousesLoginPage.resx">
+      <DependentUpon>WarehousesLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehousesSignUpPage.resx">
+      <DependentUpon>WarehousesSignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherry-blossom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lotus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birds1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-flower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherry-blossoms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monstera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flowers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful_flowers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flowers-wh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flowers2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flowers21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rose1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
