@@ -1,7 +1,17 @@
 # Visual Programming Project
  
 ### Visual Programming stock control and update project developed with Windows Form App ASP .NET Framework
- 
+
+You can use this form application to monitor the stock control between Producer/Consumer factories and warehouses simultaneously.
+
+User Profiles : You can use this software as a Producer Factory, a Consumer Factory, a or Warehouse Profile.
+
+Creating a Profile : By selecting the appropriate option from the Factory (Producer | Consumer) or Warehouse options that are suitable for your company, you can create a profile that matches your needs and encounters the necessary software.
+
+Real-time Stock Monitoring : You can track the amount of products added to the warehouses by the producer factories and the amount of products pulled from the warehouse by the consumer factories in real-time, along with up-to-date data.
+
+Efficient System : By tracking the availability of the product you are looking for, as well as the communication and address information of the relevant factory in real-time, you can achieve efficient operations and production within the ecosystem.
+
  ![Use case diagram](https://github.com/kubrayesilkaya/Visual-Programming-Project/assets/93487264/58264909-59d9-497a-a9ed-4f797c542fb7)
 
  
