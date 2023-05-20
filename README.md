@@ -4,7 +4,7 @@
 
 You can use this form application to monitor the stock control between Producer/Consumer factories and warehouses simultaneously.
 
-User Profiles : You can use this software as a Producer Factory, a Consumer Factory, a or Warehouse Profile.
+User Profiles : You can use this software as a Producer Factory, or a Consumer Factory, or a Warehouse Profile.
 
 Creating a Profile : By selecting the appropriate option from the Factory (Producer | Consumer) or Warehouse options that are suitable for your company, you can create a profile that matches your needs and encounters the necessary software.
 
