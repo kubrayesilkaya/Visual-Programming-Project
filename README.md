@@ -1,5 +1,6 @@
 # Visual Programming Project
- Visual Programming Windows Form App ASP .NET Framework
+ 
+### Visual Programming stock control and update project developed with Windows Form App ASP .NET Framework
  
  ![Use case diagram](https://github.com/kubrayesilkaya/Visual-Programming-Project/assets/93487264/58264909-59d9-497a-a9ed-4f797c542fb7)
 
